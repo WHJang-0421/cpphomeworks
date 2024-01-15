@@ -31,6 +31,7 @@ int main() {
                        "finds errors quicker than the compiler",
                        "is not afraid of C++ error messages"};
 
+  std::cout << "\nHere is your description:" << std::endl;
   std::cout << name << ", the " << adj[name.length() % adj.size()] << " "
             << time_to_noun[time_of_year] << " that "
             << ending[name.length() % ending.size()] << std::endl;
