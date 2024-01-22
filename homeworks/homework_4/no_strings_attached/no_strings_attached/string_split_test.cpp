@@ -1,4 +1,4 @@
-#include <no_strings_attached/string_split.hpp>
+#include <no_strings_attached/string_split.h>
 #include <gtest/gtest.h>
 
 using std::string_literals::operator""s;

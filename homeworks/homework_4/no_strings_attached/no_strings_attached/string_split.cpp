@@ -1,4 +1,4 @@
-#include <no_strings_attached/string_split.hpp>
+#include <no_strings_attached/string_split.h>
 
 namespace no_strings_attached {
 std::vector<std::string> Split(const std::string &str,
