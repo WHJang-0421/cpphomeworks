@@ -20,6 +20,6 @@ std::vector<std::string> Split(const std::string &str,
 
 std::vector<std::string> Split(const std::string &str,
                                const std::string &delimiter) {
-  return Split(str, delimiter, str.length());
+  return Split(str, delimiter, str.length() + 1);
 }
 } // namespace no_strings_attached
