@@ -1,2 +1,0 @@
-CompileFlags:
-  Add: [--include="no_strings_attached/*.h"]
