@@ -1,4 +1,4 @@
-#include <no_strings_attached/string_split.hpp>
+#include <no_strings_attached/string_split.h>
 #include <gtest/gtest.h>
 
 using std::string_literals::operator""s;
@@ -16,6 +16,8 @@ TEST(TestTopic, checkNumberOfChunks) {
           " "s, 4)
           .size(),
       4UL);
+  EXPECT_EQ(no_strings_attached::Split("example"s, " "s).size(), 1);
+  EXPECT_EQ(no_strings_attached::Split(""s, " "s).size(), 1);
 }
 
 TEST(TestTopic, checkEmptySplit) {

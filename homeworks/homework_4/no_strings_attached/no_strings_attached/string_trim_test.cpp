@@ -1,4 +1,4 @@
-#include <no_strings_attached/string_trim.hpp>
+#include <no_strings_attached/string_trim.h>
 #include <gtest/gtest.h>
 
 using std::string_literals::operator""s;
