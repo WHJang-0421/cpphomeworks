@@ -9,9 +9,9 @@ int Scale(int number, float factor) {
 namespace pixelator {
 Image PixelateImage(const StbImageDataView& original_image, Size new_size) {
   const auto factor_cols =
-      new_size.col / static_cast<float>(original_image.cols());
+      new_size.cols / static_cast<float>(original_image.cols());
   const auto factor_rows =
-      new_size.row / static_cast<float>(original_image.rows());
+      new_size.rows / static_cast<float>(original_image.rows());
   const auto factor = std::min(std::min(factor_cols, factor_rows), 1.0f);
 
   Image new_image{Scale(original_image.rows(), factor),

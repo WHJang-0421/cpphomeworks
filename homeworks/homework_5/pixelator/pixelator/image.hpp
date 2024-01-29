@@ -7,6 +7,7 @@ class Image {
  public:
   Image();
   Image(int rows, int cols);
+  Image(Size size);
 
   bool empty() const;
   int rows() const;

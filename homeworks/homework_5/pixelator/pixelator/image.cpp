@@ -4,6 +4,7 @@ namespace pixelator {
 Image::Image() {}
 Image::Image(int rows, int cols)
     : image_data_(rows * cols), rows_(rows), cols_(cols), empty_(false) {}
+Image::Image(Size size): Image(size.rows, size.cols) {}
 
 bool Image::empty() const { return empty_; }
 int Image::rows() const { return rows_; }

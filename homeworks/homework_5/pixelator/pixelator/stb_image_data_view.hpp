@@ -4,8 +4,8 @@
 
 namespace pixelator {
 typedef struct _Size {
-  int row;
-  int col;
+  int rows;
+  int cols;
 } Size;
 class StbImageDataView {
  public:
